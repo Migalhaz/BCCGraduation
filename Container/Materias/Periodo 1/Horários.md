@@ -1,5 +1,5 @@
 
-|              | **DOMINGO** | **SEGUNDA** | **TERÇA**    | **QUARTA** | **QUINTA**   | **SEXTA** | **SÁBADO** |
+| -----        | **DOMINGO** | **SEGUNDA** | **TERÇA**    | **QUARTA** | **QUINTA**   | **SEXTA** | **SÁBADO** |
 | ------------ | ----------- | ----------- | ------------ | ---------- | ------------ | --------- | ---------- |
 | **M1** 7:00  |             | CDI I 3A4   | GAV 3A3      | CDI I 3A4  | GAV 3A3      | CDI I 3A4 |            |
 | **M2** 7:50  |             | CDI I 3A4   | GAV 3A3      | CDI I 3A4  | GAV 3A3      | CDI I 3A4 |            |

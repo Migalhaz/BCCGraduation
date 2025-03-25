@@ -48,20 +48,6 @@
       "textColor": "#ffffff",
       "isBold": true,
       "isItalic": true
-    },
-    "Materias/Periodo 1/Cálculo Diferencial e Integral I/Minhas Anotações/Teoria dos Conjuntos.md": {
-      "backgroundColor": "#ffc800",
-      "opacity": 0.6,
-      "textColor": "#000000",
-      "isBold": true,
-      "isItalic": false
-    },
-    "Materias/Periodo 1/Cálculo Diferencial e Integral I/Minhas Anotações/Básico de Funções.md": {
-      "backgroundColor": "#ffc800",
-      "opacity": 0.6,
-      "textColor": "#000000",
-      "isBold": true,
-      "isItalic": false
     }
   },
   "presets": {

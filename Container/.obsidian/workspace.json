@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Materias/Periodo 1/Cálculo Diferencial e Integral I/Minhas Anotações/Básico de Funções.md",
+                "file": "Materias/Periodo 1/Cálculo Diferencial e Integral I/Minhas Anotações/Funções.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Básico de Funções"
+              "title": "Funções"
             }
           }
         ]
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Materias/Periodo 1/Cálculo Diferencial e Integral I/Minhas Anotações/Básico de Funções.md",
+                "file": "Materias/Periodo 1/Cálculo Diferencial e Integral I/Minhas Anotações/Funções.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Links de saída para Básico de Funções"
+              "title": "Links de saída para Funções"
             }
           },
           {
@@ -171,16 +171,26 @@
             "state": {
               "type": "oz-calendar",
               "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin desativado"
+            }
+          },
+          {
+            "id": "d946d062f35a7830",
+            "type": "leaf",
+            "state": {
+              "type": "oz-calendar",
+              "state": {},
               "icon": "OZCAL_ICON",
               "title": "OZ Calendar"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
-    "width": 361.5
+    "width": 303.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -195,11 +205,18 @@
   },
   "active": "0cc1a0abae86f414",
   "lastOpenFiles": [
+    "Materias/Periodo 1/Cálculo Diferencial e Integral I/Minhas Anotações/Logarítmos.md",
+    "Materias/Periodo 1/Cálculo Diferencial e Integral I/Minhas Anotações/Limite.md",
+    "Materias/Periodo 1/Cálculo Diferencial e Integral I/Minhas Anotações/Funções.md",
+    "Materias/Periodo 1/Cálculo Diferencial e Integral I/Minhas Anotações/Potenciação.md",
     "Materias/Periodo 1/Cálculo Diferencial e Integral I/Minhas Anotações/Teoria dos Conjuntos.md",
-    "Materias/Periodo 1/Cálculo Diferencial e Integral I/Minhas Anotações/Básico de Funções.md",
+    "Materias/Periodo 1/Agenda/Provas.md",
+    "Sem título.canvas",
+    "2025-03-25.md",
+    "Materias/Periodo 1/Agenda/Atividades Kanban.md",
+    "Materias/Periodo 1/Horários.md",
     "Materias/Periodo 1/Matemática para Computação I/Materiais/Apresentação do curso.pdf",
     "Materias/Periodo 1/Cálculo Diferencial e Integral I/Minhas Anotações/Assets/Images/definicaodeumafuncao.webp",
-    "Materias/Periodo 1/Horários.md",
     "Materias/Periodo 1/Cálculo Diferencial e Integral I/Minhas Anotações/Assets/Images/DiagramaDeVenn.webp",
     "Materias/Periodo 1/Cálculo Diferencial e Integral I/Minhas Anotações/Assets/Images",
     "Materias/Periodo 1/Cálculo Diferencial e Integral I/Minhas Anotações/Assets",
@@ -207,8 +224,6 @@
     "Materias/Periodo 1/Matemática para Computação I/Provas/MC1 Prova Unidade 2.md",
     "Materias/Periodo 1/Matemática para Computação I/Provas/MC1 Prova Unidade 3.md",
     "Materias/Periodo 1/Matemática para Computação I/Provas/MC1 Prova Unidade 4.md",
-    "Materias/Periodo 1/Agenda/Provas.md",
-    "Materias/Periodo 1/Agenda/Atividades Kanban.md",
     "Materias/Periodo 1/Matemática para Computação I/Provas",
     "Materias/Periodo 1/Agenda/Provas/MC I",
     "Materias/Periodo 1/Cálculo Diferencial e Integral I/Atividades",
@@ -228,10 +243,6 @@
     "Diario/2025-02-10.md",
     "Sem título/Sem título 1.md",
     "Sem título/Sem título.md",
-    "Sem título.md",
-    "Materias/Materia 1/Atividades/Atividade dia fodase.md",
-    "Data inválida.md",
-    "Materias/Materia 2/Atividades/Atividade dia fodase.md",
-    "Sem título.canvas"
+    "Sem título.md"
   ]
 }
