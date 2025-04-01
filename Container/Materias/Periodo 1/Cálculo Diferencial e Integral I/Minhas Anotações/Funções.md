@@ -27,22 +27,22 @@ Função que é **injetora e sobrejetora** simultaneamente.
 
 ## Funções Contínuas
 ### Definição
-Uma função \( f(x) \) é **contínua** em um ponto \( x = a \) se:  
-1. \( f(a) \) está definido.  
-2. \( \lim_{x \to a} f(x) \) existe.  
-3. \( \lim_{x \to a} f(x) = f(a) \).  
+Uma função $f(x)$ é **contínua** em um ponto $( x = a )$ se:  
+1. $f(a)$ está definido.  
+2. $\lim_{x \to a} \ f(x)$ existe.  
+3. $\lim_{x \to a} f(x) = f(a)$.  
 
 Se a função é contínua em **todos os pontos** de seu domínio, diz-se que ela é contínua.
 
 ### Exemplos
-- **Contínua:** \( f(x) = x^2 \) (não há "saltos" ou "buracos" no gráfico).  
-- **Descontínua:** \( f(x) = \frac{1}{x} \) em \( x = 0 \) (não está definida nesse ponto).  
+- **Contínua:** $f(x) = x^2$ (não há "saltos" ou "buracos" no gráfico).  
+- **Descontínua:** $f(x) = \frac{1}{x}$ em $x = 0$ (não está definida nesse ponto).  
 
 > [!NOTE] Exemplo Gráfico:  
-> ![[funcaocontinua.webp]] *(Função contínua)* vs. ![[funcaodescontinua.webp]] *(Descontínua)*.
+> ![[ExemploDeFuncaowebp.webp]]
 
 ### Propriedades
-- **Soma/Produto:** Se \( f \) e \( g \) são contínuas, então \( f + g \), \( f \times g \) também são.  
+- **Soma/Produto:** Se $(f )$ e $(g)$ são contínuas, então $( f + g )$, $( f \times g )$ também são.  
 - **Composição:** A composição de funções contínuas é contínua.  
 
 > [!TIP] Aplicação:  
@@ -51,10 +51,10 @@ Se a função é contínua em **todos os pontos** de seu domínio, diz-se que el
 ---
 
 ## Notação e Representação
-- **Forma geral:** \( f: A \to B \) (função de \( A \) em \( B \)).
-- **Regra de saída:** \( f(x) = y \), onde \( x \in A \) e \( y \in B \).
+- **Forma geral:** $( f: A \to B)$ (função de $( A )$ em $( B )$).
+- **Regra de saída:** $( f(x) = y)$, onde $( x \in A )$ e $( y \in B )$.
 
-> [!TIP] Exemplo Prático:  
-> Se \( A = \{1, 2, 3\} \) e \( B = \{a, b, c\} \):  
-> - Função válida: \( f(1) = a \), \( f(2) = b \), \( f(3) = c \).  
-> - **Não é função:** \( f(1) = a \) **e** \( f(1) = b \) (dois valores para o mesmo elemento).
+> [!TIP] Exemplo Prático: 
+> Se $( A = \{1, 2, 3\})$ e $( B = \{a, b, c\}):  
+> - Função válida: $( f(1) = a )$, $( f(2) = b )$,  $( f(3) = c )$.  
+> - **Não é função:** $( f(1) = a )$ **e** $( f(1) = b )$ (dois valores para o mesmo elemento).

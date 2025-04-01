@@ -36,6 +36,11 @@ Elementos de **A** que não estão em **B**.
 >{1, 2} - {2, 3} = {1}.
 
 ## Conjuntos Numéricos
+
+Um bom vídeo sobre os conjuntos numéricos
+
+![](https://youtu.be/sxPGDJ-uXV0?si=p76Yf1uuHNGrWtGY)
+
 ### **Naturais $\mathbb{N}$** 
 $$( \mathbb{N} ):\{1, 2, 3, \ldots\}$$
 ### **Inteiros $\mathbb{Z}$**
