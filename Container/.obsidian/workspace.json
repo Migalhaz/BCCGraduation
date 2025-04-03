@@ -13,10 +13,10 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Materias/Periodo 1/Cálculo Diferencial e Integral I/Minhas Anotações/LIstas/Calculo_de_Limites_lista.pdf"
+                "file": "Materias/Periodo 1/Matemática para Computação I/Materiais/Apresentação do curso.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "Calculo_de_Limites_lista"
+              "title": "Apresentação do curso"
             }
           }
         ]
@@ -211,16 +211,17 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "0cc1a0abae86f414",
+  "active": "cea5d4ec914f8749",
   "lastOpenFiles": [
+    "Materias/Periodo 1/Horários.md",
+    "Materias/Periodo 1/Cálculo Diferencial e Integral I/Minhas Anotações/Funções.md",
+    "Materias/Periodo 1/Cálculo Diferencial e Integral I/Minhas Anotações/LIstas/Calculo_de_Limites_lista.pdf",
     "Materias/Periodo 1/Cálculo Diferencial e Integral I/Minhas Anotações/LIstas/Continuidade_Funo_Exponencial_lista.pdf",
     "Materias/Periodo 1/Cálculo Diferencial e Integral I/Minhas Anotações/Teoria dos Conjuntos.md",
     "Materias/Periodo 1/Cálculo Diferencial e Integral I/Minhas Anotações/Potenciação.md",
     "Materias/Periodo 1/Cálculo Diferencial e Integral I/Minhas Anotações/Logarítmos.md",
     "Materias/Periodo 1/Cálculo Diferencial e Integral I/Minhas Anotações/Limite.md",
-    "Materias/Periodo 1/Cálculo Diferencial e Integral I/Minhas Anotações/Funções.md",
     "Materias/Periodo 1/Cálculo Diferencial e Integral I/Minhas Anotações/Materiais/Limites_pg_9_a_pg_20.pdf",
-    "Materias/Periodo 1/Cálculo Diferencial e Integral I/Minhas Anotações/LIstas/Calculo_de_Limites_lista.pdf",
     "Materias/Periodo 1/Cálculo Diferencial e Integral I/Minhas Anotações/LIstas",
     "Materias/Periodo 1/Cálculo Diferencial e Integral I/Minhas Anotações/Materiais",
     "Materias/Periodo 1/Cálculo Diferencial e Integral I/Minhas Anotações/Assets/Images/ExemploDeFuncaowebp.webp",
@@ -229,7 +230,6 @@
     "Materias/Periodo 1/Cálculo Diferencial e Integral I/Minhas Anotações/Assets/Images/ExemploDeFuncaowebp 1",
     "Materias/Periodo 1/Cálculo Diferencial e Integral I/Minhas Anotações/Assets/Images/ExemploDeFuncaowebp",
     "Materias/Periodo 1/Matemática para Computação I/Materiais/Apresentação do curso.pdf",
-    "Materias/Periodo 1/Horários.md",
     "Materias/Periodo 1/Agenda/Provas.md",
     "Materias/Periodo 1/Agenda/Atividades Kanban.md",
     "Materias/Periodo 1/Matemática para Computação I/Provas/MC1 Prova Unidade 1.md",
