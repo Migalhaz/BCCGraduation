@@ -1,0 +1,7 @@
+
+---
+>[!INFO]
+>Os naturais e o tipo de dados correspondente; seus construtores (zero, succ) e sua teoria: implementação recursiva das suas principais operações, e verificação indutiva das suas principais propriedades. O tipo de dados dos boolianos. Ordens sobre os naturais: especificação e verificação de suas propriedades. Outras funções e relações, e suas propriedades. Indução como princípio e técnica de demonstração em matemática. A unicidade dos naturais (a menos de isomorfismo). Tipos de dados das listas: implementação recursiva e verificação indutiva de suas principais propriedades. Outros tipos de dados recursivos: árvores; expressões aritméticas; fórmulas; termos do cálculo lambda. Numerais binários, definição de semântica e seu uso para verificação de corretude. Axiomas sobre os inteiros (domínio de integridade bem-ordenado). Demonstrações de teoremas usando os axiomas sobre as operações e sobre a ordem. A relação de divisibilidade: verificação de suas principais propriedades. Infinitude dos primos: demonstração construtiva de Euclides. Lema de divisão. Sistemas posicionais para numerais: demonstração da sua corretude. mdc & mmc: demonstrações das suas propriedades. Algoritmo estendido de Euclides: corretude & terminação. Demonstração do teorema Fundamental de Aritmética. Congruência módulo um inteiro: demonstrações das suas propriedades. Aritmética modular e propriedades do Z/mZ. Teoremas de Fermat e de Euler. Conjecturas & aplicações.
+
+---
+[Mais Informações](https://sigaa.ufrn.br/sigaa/public/curso/relatorio_curriculo.jsf)

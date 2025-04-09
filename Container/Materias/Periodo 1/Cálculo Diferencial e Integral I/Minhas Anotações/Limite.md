@@ -31,8 +31,8 @@ $$\lim_{x \to a} \frac{f(x)}{g(x)} = \frac{\lim_{x \to a} f(x)}{\lim_{x \to a} g
 4. **Potência:**  
 $$\lim_{x \to a} [f(x)]^n = \left[ \lim_{x \to a} f(x) \right]^n$$  
 > [!tip] Exemplo Prático:  
-> Calcule \( \lim_{x \to 2} (3x + 1) \):  
-> \[ = 3 \times \lim_{x \to 2} x + \lim_{x \to 2} 1 = 3 \times 2 + 1 = 7 \]  
+> Calcule  $$\lim_{x \to 2} (3x + 1)  
+> = 3 \times \lim_{x \to 2} x + \lim_{x \to 2} 1 = 3 \times 2 + 1 = 7$$  
 
 ---
 

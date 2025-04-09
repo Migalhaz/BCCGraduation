@@ -48,6 +48,11 @@
       "textColor": "#ffffff",
       "isBold": true,
       "isItalic": true
+    },
+    "Materias/Periodo 1/Treinamento para Competições de Programação": {
+      "isItalic": true,
+      "isBold": true,
+      "textColor": "#e6ca3d"
     }
   },
   "presets": {
