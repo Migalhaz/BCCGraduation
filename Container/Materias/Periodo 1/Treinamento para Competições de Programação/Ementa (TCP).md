@@ -1,7 +1,7 @@
 
 ---
 >[!INFO]
->Programação em C++ e a STL. Listras, pilhas e filas. Fiilas de prioridades,  dicionários e conjuntos. Cadeias. Ordenação e busca. Aritmética e álgebra. Teoria dos números. backtracking.
+>Programação em C++ e a STL. Listas, pilhas e filas. Filas de prioridades,  dicionários e conjuntos. Cadeias. Ordenação e busca. Aritmética e álgebra. Teoria dos números. backtracking.
 
 ---
 [Mais Informações](https://sigaa.ufrn.br/sigaa/public/curso/relatorio_curriculo.jsf)
