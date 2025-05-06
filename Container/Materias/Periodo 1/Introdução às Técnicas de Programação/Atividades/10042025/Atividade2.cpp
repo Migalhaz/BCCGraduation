@@ -6,9 +6,19 @@ int main()
 
     std::cin >> inputN >> inputI >> inputJ;
 
-    for (int i = 0; i < inputN; ++i)
+    for (int i = 1; i < inputN + 1; ++i)
     {
-        
+        int rI, rJ;
+        rI = inputI * i;
+        rJ = inputJ * i;
+
+        if (rI == rJ)
+        {
+            std::cout << rI << ' ';
+            continue;
+        }
+
+        std::cout << rI << ' ' << rJ << ' ';
     }
     return 0;
 }

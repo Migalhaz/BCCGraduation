@@ -32,20 +32,34 @@ int main()
     }
 
     int iterator = 1;
-
-    for (int i = 0; i < count.size(); ++i)
+    while (count.size() > 0)
     {
         if (!count.count(iterator))
         {
-            std::cout << "No";
-            return 0;
+            ++iterator;
+            continue;  
         }
         if (count[iterator] != 2){
             std::cout << "No";
             return 0;
         }
+        count.erase(iterator);
         ++iterator;
     }
+    // for (int i = 0; i < count.size(); ++i)
+    // {
+    //     if (!count.count(iterator))
+    //     {
+    //         std::cout << "No";
+    //         return 0;
+    //     }
+    //     if (count[iterator] != 2){
+    //         std::cout << "No";
+    //         return 0;
+    //     }
+
+    //     ++iterator;
+    // }
 
     std::cout << "Yes";
     return 0;
