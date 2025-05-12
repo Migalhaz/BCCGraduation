@@ -11,10 +11,10 @@ class Bet
         double betPercentage;
 };
 
-void ShowWinner(Bet bet, double totalBet)
+void ShowWinner(Bet bet, double percentage)
 {
     std::cout << "Apostador " << (bet.friendIndex + 1) << ": R$ ";
-    double result = (bet.bet * 100) / totalBet;
+    double result = round(bet.bet * percentage);
     std::cout << result << '\n';
 
 }
@@ -42,35 +42,37 @@ int main()
         friends[i] = newBet;
     }
     
+    std::cin >> winnerIndex;
     
 
-    std::cin >> winnerIndex;
-
+    std::cout << "Total: R$ " << totalBet << '\n';
+    double food = round(totalBet * 0.1);
+    totalBet -= food;
     
     std::vector<Bet> friendsWinners = std::vector<Bet>();
+    double totalWin = 0;
     for (Bet b : friends)
     {
-        std::cout << b.friendIndex << " apostou em -> " << b.playerIndex << '\n';
         if (b.playerIndex == winnerIndex)
         {
-            std::cout << "Adding winner: " << b.friendIndex << '\n';
+            totalWin += b.bet;
             friendsWinners.push_back(b);
         }
     }
 
-    double food = round(totalBet * 0.1);
-    std::cout << "Total: R$ " << totalBet << '\n';
-    totalBet -= food;
-    if(friendsWinners.size() > 0)
+    if(friendsWinners.size() <= 0)
     {
-        for (Bet b : friendsWinners)
+        for (Bet b : friends)
         {
-            ShowWinner(b, totalBet);
+            totalWin += b.bet;
+            friendsWinners.push_back(b);
         }
     }
-    else
+    
+    double percentage = totalBet/totalWin;
+    for (Bet b : friendsWinners)
     {
-
+        ShowWinner(b, percentage);
     }
 
     std::cout << "Bebidas e petiscos: R$ " << food << '\n';
