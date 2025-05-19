@@ -1,0 +1,173 @@
+{
+  "main": {
+    "id": "e225e1126f18590d",
+    "type": "split",
+    "children": [
+      {
+        "id": "60b092a364994503",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "66db9b32d8151d50",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Periodo 1/Treinamento para Competições de Programação/Materiais/book.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "book"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "359a071b80300c37",
+    "type": "split",
+    "children": [
+      {
+        "id": "82cd635e4948be0d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c648fd28b81299d3",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "d5cc917aa30340b8",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "bc565fa7be829162",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "c3f8eb0c8ab34e09",
+    "type": "split",
+    "children": [
+      {
+        "id": "a6ca18a86f6dabba",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e1fde455de7ea082",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Periodo 1/Treinamento para Competições de Programação/Materiais/book.pdf",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for book"
+            }
+          },
+          {
+            "id": "52ef77dec0f9e31a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Periodo 1/Treinamento para Competições de Programação/Materiais/book.pdf",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from book"
+            }
+          },
+          {
+            "id": "13208610b625047a",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "e1c7e8e0d122b7fa",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Periodo 1/Treinamento para Competições de Programação/Materiais/book.pdf",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of book"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "66db9b32d8151d50",
+  "lastOpenFiles": [
+    "Periodo 1/Treinamento para Competições de Programação/Atividades/main"
+  ]
+}
