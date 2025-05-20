@@ -1,16 +1,13 @@
 #include <iostream>
-#include "DivExample.h"
-#include "FuncExample.h"
-#include "PrimeExample.h"
+#include "MathMenu.h"
+#include "CryptoMenu.h"
 
 void ShowOptions()
 {
     ClearConsole();
     std::cout << "Escolha uma opcao:\n";
-    std::cout << "[1] Divisao\n";
-    std::cout << "[2] Funcao Piso\n";
-    std::cout << "[3] Funcao Teto\n";
-    std::cout << "[4] Primos\n";
+    std::cout << "[1] Matematica\n";
+    std::cout << "[2] Criptografia\n";
     std::cout << "[q] Sair\n";
 }
 
@@ -24,25 +21,17 @@ int main()
 
         if (input == '1')
         {
-            ShowDivExample();
+            ShowMathMenu();
         }
         if (input == '2')
         {
-            ShowFloorExample();
-        }
-        if (input == '3')
-        {
-            ShowCeilExample();
-        }
-        if (input == '4')
-        {
-            PrimesMenu();
+            ShowCryptoMenu();            
         }
         if (input == 'q' || input == 'Q')
         {
             break;
         }
-
     }
+    ClearConsole();
     return 0;
 }

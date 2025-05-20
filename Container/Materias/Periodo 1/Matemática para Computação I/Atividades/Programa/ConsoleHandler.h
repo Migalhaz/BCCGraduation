@@ -22,6 +22,11 @@ void ClearConsole()
 
 void AwaitInput()
 {
-    std::cout << "Pressione qualquer tecla para continuar...\n";
-    getch();
+    #ifdef _WIN32
+        system("pause");
+    #else
+        std::cout << "Pressione enter para continuar...\n";
+        std::cin.ignore();
+        getchar();
+    #endif
 }
