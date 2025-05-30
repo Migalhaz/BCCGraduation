@@ -6,9 +6,19 @@ namespace MyMath
 {
     bool DivideInteger(int n, int d, int& q, int& r);
     bool DivideInteger(double n, double d, double& q, double& r);
+    
     int Divide(int n, int d);
     int Mod(int n, int d);
+    
     double Floor(double n);
+    double Ceil(double n);
+
+    int Abs(int n);
+
+    int Abs(int n)
+    {
+        return n >= 0 ? n : -n;
+    }
 
     int Divide(int n, int d)
     {
@@ -32,51 +42,101 @@ namespace MyMath
 
     bool DivideInteger(int n, int d, int& q, int& r)
     {
-        if(d == 0) return false;
         q = 0;
         r = 0;
+        if(d == 0)
+        {
+            throw std::invalid_argument("Nao eh possivel dividir por zero!");
+            return false;
+        }
 
-        if(n >= 0)
+        if (n == d)
+        {
+            q = 1;
+            r = 0;
+            return true;
+        }
+
+        if((n > 0 && d > 0))
         {
             while (((q + 1) * d) <= n)
             {
                 ++q;
             }
         }
-        else
+        else if (n < 0 && d < 0)
+        { 
+            while ((n - (q * d)) < 0)
+            {
+                ++q;
+            }
+        }
+        else if (n > 0 && d < 0)
         {
-            while (((q - 1) * d) >= n)
+            while(((q - 1) * d) <= n)
             {
                 --q;
             }
         }
-
+        else if (n < 0 && d > 0)
+        {
+            while ((n - (q * d)) < 0)
+            {
+                --q;
+            }
+        }
+        
         r = n - (q * d);
 
-        return r == 0;
+        return r == 0; 
     }
-
+    
     bool DivideInteger(double n, double d, double& q, double& r)
     {
-        if(d == 0) return false;
         q = 0;
         r = 0;
+        if(d == 0)
+        {
+            throw std::invalid_argument("Nao eh possivel dividir por zero!");
+            return false;
+        }
 
-        if(n >= 0)
+        if (n == d)
+        {
+            q = 1;
+            r = 0;
+            return true;
+        }
+
+        if((n > 0 && d > 0))
         {
             while (((q + 1) * d) <= n)
             {
                 ++q;
             }
         }
-        else
+        else if (n < 0 && d < 0)
+        { 
+            while ((n - (q * d)) < 0)
+            {
+                ++q;
+            }
+        }
+        else if (n > 0 && d < 0)
         {
-            while (((q - 1) * d) >= n)
+            while(((q - 1) * d) <= n)
             {
                 --q;
             }
         }
-
+        else if (n < 0 && d > 0)
+        {
+            while ((n - (q * d)) < 0)
+            {
+                --q;
+            }
+        }
+        
         r = n - (q * d);
 
         return r == 0;
@@ -84,24 +144,19 @@ namespace MyMath
 
     double Floor(double n)
     {
-        double result;
-        double mod;
-
-        if (DivideInteger(n, 1, result, mod))
+        double q;
+        double r;
+        if (DivideInteger(n, 1, q, r))
         {
             return n;
         }
-        
-        if (n > 0)
-        {
-            return n - mod;
-        }
-        
-        return n - (1 + mod);
+        n -= r;
+        return n;
     }
 
     double Ceil(double n)
     {
+        double r = 0;
         double result;
         double mod;
 
@@ -109,13 +164,8 @@ namespace MyMath
         {
             return n;
         }
-        
-        if (n > 0)
-        {
-            return n + 1 - mod;
-        }
-        
-        return n - mod;
+
+        return n + (1-mod);
     }
 
     bool IsPrime(int n)
@@ -152,6 +202,39 @@ namespace MyMath
             }
         }
     
+        return result;
+    }
+    
+    int MDC(int a, int b)
+    {
+        if (a == 0)
+        {
+            return b;
+        }
+        if (b == 0)
+        {
+            return a;
+        }
+        return MDC(b, a%b);
+    }
+
+    int MDC_Verbose(int a, int b)
+    {
+        std::cout << "Fazendo MDC de: " << a << " e " << b << "!\n";
+        if (a == 0)
+        {
+            std::cout << "Como 'a' eh 0, o Maior Divisor Comum (MDC) entre qualquer numero e 0, eh o proprio numero!";
+            return b;
+        }
+        if (b == 0)
+        {
+            return a;
+        }
+
+        std::cout << "'a' Passa a ser o resto da divisao de 'a' por 'b'!\n";
+        int r = a%b;
+        std::cout << "O resto da divisao de " << a << " por " << b << " eh: " << (r) << '\n';
+        int result = MDC_Verbose(b, r); 
         return result;
     }
 }

@@ -22,6 +22,13 @@ void ShowDivExample()
     double resultado;
     double resto;
 
+    if (divisor == 0)
+    {
+        std::cout << "Nao eh possivel dividir por 0!\n";
+        AwaitInput();
+        return;
+    }
+    
     MyMath::DivideInteger(dividendo, divisor, resultado, resto);
     
     std::cout << "O resultado de " << dividendo << '/' << divisor;

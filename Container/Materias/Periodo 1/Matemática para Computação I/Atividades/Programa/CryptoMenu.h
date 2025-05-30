@@ -7,10 +7,11 @@
 void CryptoMenuOptions()
 {
     ClearConsole();
-    std::cout << "Escolha uma opcao: \n";
+    std::cout << "=== CRIPTOGRAFIA ===\n";
     std::cout << "[1] Cifra de cesar\n";
     std::cout << "[2] RSA\n";
     std::cout << "[q] Voltar\n";
+    std::cout << "\nEscolha uma opcao: ";
 }
 
 void CesarExample()
