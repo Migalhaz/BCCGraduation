@@ -76,7 +76,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "c3f8eb0c8ab34e09",
@@ -168,6 +169,16 @@
   },
   "active": "66db9b32d8151d50",
   "lastOpenFiles": [
+    "Periodo 1/Treinamento para Competições de Programação/Ementa (TCP).md",
+    "Periodo 1/Métodos de Estudo no Ensino Superior/Ementa (MEES).md",
+    "Periodo 1/Matemática para Computação I/Atividades/Exerci769cios_U1v3.pdf",
+    "Periodo 1/Introdução às Técnicas de Programação/Materiais/ITP_07_-_Tipos_de_variveis.pdf",
+    "Periodo 1/Introdução às Técnicas de Programação/Materiais/ITP_02_-_Princpios_do_Pensamento_Computacional.pdf",
+    "Periodo 1/Cálculo Diferencial e Integral I/Minhas Anotações/Funções.md",
+    "Periodo 1/Cálculo Diferencial e Integral I/Minhas Anotações/Logarítmos.md",
+    "Periodo 1/Cálculo Diferencial e Integral I/Minhas Anotações/Potenciação.md",
+    "Periodo 1/Cálculo Diferencial e Integral I/Minhas Anotações/Teoria dos Conjuntos.md",
+    "Periodo 1/Treinamento para Competições de Programação/Materiais/book.pdf",
     "Periodo 1/Treinamento para Competições de Programação/Atividades/main"
   ]
 }

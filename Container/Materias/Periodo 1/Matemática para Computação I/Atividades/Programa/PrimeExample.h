@@ -75,8 +75,8 @@ void IntervalPrime()
             if (count == 10)
             {
                 std::cout << '\n';
-                count = 0;
             }
+            count = 0;
         }
         std::cout << '\n';
     }

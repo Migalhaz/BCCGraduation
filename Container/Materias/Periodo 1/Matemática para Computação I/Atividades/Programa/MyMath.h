@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include <vector>
+#include <set>
 
 namespace MyMath
 {
@@ -97,7 +98,7 @@ namespace MyMath
         r = 0;
         if(d == 0)
         {
-            throw std::invalid_argument("Nao eh possivel dividir por zero!");
+            throw std::invalid_argument("Nao é possivel dividir por zero!");
             return false;
         }
 
@@ -168,9 +169,21 @@ namespace MyMath
         return n + (1-mod);
     }
 
+    std::set<int> primes;
+    std::set<int> notPrimes;
     bool IsPrime(int n)
     {
         if (n < 2)
+        {
+            return false;
+        }
+
+        if (primes.count(n))
+        {
+            return true;
+        }
+
+        if (notPrimes.count(n))
         {
             return false;
         }
@@ -179,10 +192,11 @@ namespace MyMath
         {
             if(CanDivide(n, i))
             {
+                notPrimes.insert(n);
                 return false;
             }
         }
-
+        primes.insert(n);
         return true;
     }
 
@@ -220,18 +234,19 @@ namespace MyMath
 
     int MDC_Verbose(int a, int b)
     {
-        std::cout << "Fazendo MDC de: " << a << " e " << b << "!\n";
+        std::cout << "Fazendo MDC de: " << a << " e " << b << ".\n";
         if (a == 0)
         {
-            std::cout << "Como 'a' eh 0, o Maior Divisor Comum (MDC) entre qualquer numero e 0, eh o proprio numero!";
+            std::cout << "Como 'a' é 0, o Maior Divisor Comum (MDC) entre qualquer numero e 0, é o proprio numero!";
             return b;
         }
         if (b == 0)
         {
+            std::cout << "Como 'b' é 0, o Maior Divisor Comum (MDC) entre qualquer numero e 0, é o proprio numero!";
             return a;
         }
 
-        std::cout << "'a' Passa a ser o resto da divisao de 'a' por 'b'!\n";
+        std::cout << "'a' Passa a ser o resto da divisao de " << a << " por " << b << ".\n";
         int r = a%b;
         std::cout << "O resto da divisao de " << a << " por " << b << " eh: " << (r) << '\n';
         int result = MDC_Verbose(b, r); 
