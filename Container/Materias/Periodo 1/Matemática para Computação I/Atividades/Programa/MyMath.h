@@ -219,7 +219,7 @@ namespace MyMath
         return result;
     }
     
-    int MDC(int a, int b)
+    long long MDC(long long a, long long b)
     {
         if (a == 0)
         {
@@ -232,24 +232,74 @@ namespace MyMath
         return MDC(b, a%b);
     }
 
-    int MDC_Verbose(int a, int b)
+    long long MDC_Verbose(long long a, long long b)
     {
         std::cout << "Fazendo MDC de: " << a << " e " << b << ".\n";
         if (a == 0)
         {
-            std::cout << "Como 'a' é 0, o Maior Divisor Comum (MDC) entre qualquer numero e 0, é o proprio numero!";
+            std::cout << "Como 'a' (" << a << ") é 0, o Maior Divisor Comum (MDC) entre qualquer numero e 0, é o proprio numero!";
             return b;
         }
         if (b == 0)
         {
-            std::cout << "Como 'b' é 0, o Maior Divisor Comum (MDC) entre qualquer numero e 0, é o proprio numero!";
+            std::cout << "Como 'b' (" << b << ") é 0, o Maior Divisor Comum (MDC) entre qualquer numero e 0, é o proprio numero!";
             return a;
         }
 
         std::cout << "'a' Passa a ser o resto da divisao de " << a << " por " << b << ".\n";
-        int r = a%b;
+        long long r = a%b;
         std::cout << "O resto da divisao de " << a << " por " << b << " eh: " << (r) << '\n';
-        int result = MDC_Verbose(b, r); 
+        long long result = MDC_Verbose(b, r); 
+        return result;
+    }
+
+    struct BezoutMethodResult
+    {
+        long long mdc;
+        long long s, t;
+
+        BezoutMethodResult(long long newMdc, long long newS, long long newT)
+        {
+            this->mdc = newMdc;
+            this->s = newS;
+            this->t = newT;
+        }
+    };
+
+    BezoutMethodResult BezoutMethod(long long a, long long b)
+    {
+        if (b == 0)
+        {
+            return BezoutMethodResult(a, 1, 0);
+        }
+
+        long long q = a/b;
+        long long r = a%b;
+        BezoutMethodResult result = BezoutMethod(b, r);
+        long long newT = result.s - (q * result.t);
+        result.s = result.t;
+        result.t = newT;
+        return result;
+    }
+
+    BezoutMethodResult BezoutMethod_Verbose(long long a, long long b)
+    {
+        std::cout << "Calculando a combinacao linear entre " << a << "s + " << b << "t = MDC(" << a << ", " << b << ")\n"; 
+        if (b == 0)
+        {
+            std::cout << "O resultado para combinação linear eh s = 1 e t = 0!\n";
+            return BezoutMethodResult(a, 1, 0);
+        }
+
+        long long q = a/b;
+        long long r = a%b;
+        BezoutMethodResult result = BezoutMethod_Verbose(b, r);
+
+        std::cout << "O novo valor de t eh: o valor do s (" << result.s << ") - (o valor de q (" << q << ") * o valor atual de t (" << result.t << "))!\n";
+        long long newT = result.s - (q * result.t);
+        std::cout << "O novo valor de s eh o valor original do t (" << result.t << ")!\n";
+        result.s = result.t;
+        result.t = newT;
         return result;
     }
 }

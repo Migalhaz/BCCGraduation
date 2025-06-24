@@ -14,6 +14,7 @@ void ShowOptions()
     std::cout << "\nEscolha uma opcao: ";
 }
 
+#include "MyMath.h"
 int main()
 {
     while (true)

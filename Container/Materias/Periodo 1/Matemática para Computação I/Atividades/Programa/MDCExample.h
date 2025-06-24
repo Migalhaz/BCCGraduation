@@ -39,6 +39,31 @@ void ShowMDCExample()
     AwaitInput();
 }
 
+void ExplainBezout()
+{
+    ClearConsole();
+}
+
+void ShowBezoutExample()
+{
+    ExplainBezout();
+    int a, b;
+    GetInput(a, "Insira o primeiro valor: ");
+    GetInput(b, "Insira o segundo valor: ");
+    MyMath::BezoutMethodResult r = MyMath::BezoutMethodResult(0, 0, 0);
+
+    if (verboseFunc)
+    {
+        r = MyMath::BezoutMethod_Verbose(a, b);
+    }
+    else
+    {
+        r = MyMath::BezoutMethod(a, b);
+    }
+    std::cout << "a combinação linear de a*s + b*t = MDC(a, b) é s = " << r.s << " t = " << r.t << "!\n";
+    AwaitInput();
+}
+
 void MDCMenu()
 {
     while (true)
@@ -56,7 +81,7 @@ void MDCMenu()
         }
         if (input == '2')
         {
-
+            ShowBezoutExample();
         }
     }
 }
