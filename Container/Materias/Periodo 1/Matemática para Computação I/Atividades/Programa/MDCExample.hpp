@@ -1,7 +1,7 @@
 #include <iostream>
-#include "MyMath.h"
-#include "ConsoleHandler.h"
-#include "Settings.h"
+#include "MyMath.hpp"
+#include "ConsoleHandler.hpp"
+#include "Settings.hpp"
 
 void ShowMDCMenu()
 {
@@ -11,7 +11,7 @@ void ShowMDCMenu()
     std::cout << "[1] MDC (Algoritmo de Euclides)\n";
     std::cout << "[2] MDC Estendido (Teorema de Bezout)\n";
     std::cout << "[q] Voltar\n";
-    std::cout << "\nEscolha uma opcao: ";
+    std::cout << "\nEscolha uma opção: ";
 }
 
 void ExplainMDC()
@@ -34,7 +34,7 @@ void ShowMDCExample()
     {
         r = MyMath::MDC(a, b);
     }
-    std::cout << "O resultado do MDC entre " << a << " e " << b << " eh: " << r << '\n'; 
+    std::cout << "O resultado do MDC entre " << a << " e " << b << " é: " << r << '\n'; 
 
     AwaitInput();
 }
@@ -61,6 +61,7 @@ void ShowBezoutExample()
         r = MyMath::BezoutMethod(a, b);
     }
     std::cout << "a combinação linear de a*s + b*t = MDC(a, b) é s = " << r.s << " t = " << r.t << "!\n";
+    std::cout << a << '*' << r.s << " + " << b << '*' << r.t << " = " << r.mdc << '\n';
     AwaitInput();
 }
 

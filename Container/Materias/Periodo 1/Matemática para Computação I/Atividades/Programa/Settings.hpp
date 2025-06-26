@@ -1,6 +1,6 @@
 #pragma once
 #include <iostream>
-#include "ConsoleHandler.h"
+#include "ConsoleHandler.hpp"
 
 extern bool showExamples = true;
 extern bool explain = true;
@@ -10,12 +10,12 @@ extern char activeSetting[2] = {' ', '+'};
 void SettingsOptions()
 {
     ClearConsole();
-    std::cout << "=== CONFIGURACAO ===\n";
-    std::cout << "[1] Monstrar explicacao [" << activeSetting[explain] << "]\n";
+    std::cout << "=== CONFIGURAÇÃO ===\n";
+    std::cout << "[1] Monstrar explicação [" << activeSetting[explain] << "]\n";
     std::cout << "[2] Mostrar exemplos [" << activeSetting[showExamples] << "]\n";
     std::cout << "[3] Mostrar processo: [" << activeSetting[verboseFunc] << "]\n";
     std::cout << "[q] Voltar\n";
-    std::cout << "\nEscolha uma opcao: ";
+    std::cout << "\nEscolha uma opção: ";
 }
 
 void ShowSettingsMenu()

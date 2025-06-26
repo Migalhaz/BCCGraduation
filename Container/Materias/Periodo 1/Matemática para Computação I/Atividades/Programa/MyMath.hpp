@@ -47,7 +47,7 @@ namespace MyMath
         r = 0;
         if(d == 0)
         {
-            throw std::invalid_argument("Nao eh possivel dividir por zero!");
+            throw std::invalid_argument("Nao é possível dividir por zero!");
             return false;
         }
 
@@ -98,7 +98,7 @@ namespace MyMath
         r = 0;
         if(d == 0)
         {
-            throw std::invalid_argument("Nao é possivel dividir por zero!");
+            throw std::invalid_argument("Não é possível dividir por zero!");
             return false;
         }
 

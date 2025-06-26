@@ -1,20 +1,18 @@
 #include <iostream>
-#include "Settings.h"
-#include "MathMenu.h"
-#include "CryptoMenu.h"
-
+#include "Settings.hpp"
+#include "MathMenu.hpp"
+#include "CryptoMenu.hpp"
 
 void ShowOptions()
 {
     ClearConsole();
     std::cout << "=== MENU ===\n";
-    std::cout << "[1] Matematica\n";
+    std::cout << "[1] Matemática\n";
     std::cout << "[2] Criptografia\n";
     std::cout << "[q] Sair\n";
-    std::cout << "\nEscolha uma opcao: ";
+    std::cout << "\nEscolha uma opção: ";
 }
 
-#include "MyMath.h"
 int main()
 {
     while (true)

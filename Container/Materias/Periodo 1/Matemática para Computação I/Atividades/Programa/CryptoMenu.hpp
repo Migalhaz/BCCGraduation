@@ -1,8 +1,9 @@
 #include <iostream>
 #include <string>
 
-#include "Crypto.h"
-#include "ConsoleHandler.h"
+#include "Crypto.hpp"
+#include "ConsoleHandler.hpp"
+#include "RSAMenu.hpp"
 
 void CryptoMenuOptions()
 {
@@ -11,7 +12,7 @@ void CryptoMenuOptions()
     std::cout << "[1] Cifra de cesar\n";
     std::cout << "[2] RSA\n";
     std::cout << "[q] Voltar\n";
-    std::cout << "\nEscolha uma opcao: ";
+    std::cout << "\nEscolha uma opção: ";
 }
 
 void CesarExample()
@@ -28,13 +29,13 @@ void CesarExample()
         }
     }
     
-    std::cout << "Insira uma chave (numero inteiro): ";
+    std::cout << "Insira uma chave (número inteiro): ";
 
     int key;
     std::cin >> key;
     
     std::string result = MyCrypto::Cesar(msg, key);
-    std::cout << "O resultado eh: \n" << result << '\n';
+    std::cout << "O resultado é: \n" << result << '\n';
     AwaitInput();
 }
 
@@ -53,6 +54,10 @@ void ShowCryptoMenu()
         if (input == '1')
         {
             CesarExample();            
+        }
+        if (input == '2')
+        {
+            ShowRSAMenu();
         }
     }   
 }

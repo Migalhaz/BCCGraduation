@@ -1,11 +1,11 @@
 #include <iostream>
-#include "MyMath.h"
-#include "ConsoleHandler.h"
+#include "MyMath.hpp"
+#include "ConsoleHandler.hpp"
 
 void ExplainDiv()
 {
     ClearConsole();
-    std::cout << "Isso eh um exemplo de divisao: ";
+    std::cout << "Isso é um exemplo de divisão: ";
     std::cout << "10/2 = " << MyMath::Divide(10, 2) << '\n';
 }
 
@@ -24,7 +24,7 @@ void ShowDivExample()
 
     if (divisor == 0)
     {
-        std::cout << "Nao eh possivel dividir por 0!\n";
+        std::cout << "Não é possível dividir por 0!\n";
         AwaitInput();
         return;
     }
@@ -32,7 +32,7 @@ void ShowDivExample()
     MyMath::DivideInteger(dividendo, divisor, resultado, resto);
     
     std::cout << "O resultado de " << dividendo << '/' << divisor;
-    std::cout << " eh: " << resultado << " com resto: " << resto << '\n';
+    std::cout << " é: " << resultado << " com resto: " << resto << '\n';
     
     AwaitInput();
 }
