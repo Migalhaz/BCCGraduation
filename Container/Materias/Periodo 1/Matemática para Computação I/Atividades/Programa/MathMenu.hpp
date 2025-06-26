@@ -1,9 +1,9 @@
 #pragma once
 #include <iostream>
-#include "DivExample.h"
-#include "FuncExample.h"
-#include "PrimeExample.h"
-#include "MDCExample.h"
+#include "DivExample.hpp"
+#include "FuncExample.hpp"
+#include "PrimeExample.hpp"
+#include "MDCExample.hpp"
 
 
 void SettingsOptions();
@@ -16,24 +16,24 @@ void ShowSettingsMenu();
 void ShowMathOptions()
 {
     ClearConsole();
-    std::cout << "=== MATEMATICA ===\n";
-    std::cout << "[1] Funcoes basicas\n";
+    std::cout << "=== MATEMÁTICA ===\n";
+    std::cout << "[1] Funções básicas\n";
     std::cout << "[2] Primos\n";
     std::cout << "[3] MDC\n";
-    std::cout << "[4] Configuracoes\n";
+    std::cout << "[4] Configurações\n";
     std::cout << "[q] Voltar\n";
-    std::cout << "\nEscolha uma opcao: ";
+    std::cout << "\nEscolha uma opção: ";
 }
 
 void ShowBasicOptions()
 {
     ClearConsole();
-    std::cout << "=== FUNCOES BASICAS ===\n";
+    std::cout << "=== FUNCOES BÁSICAS ===\n";
     std::cout << "[1] Divisão\n";
     std::cout << "[2] Função Piso\n";
     std::cout << "[3] Função Teto\n";
     std::cout << "[q] Voltar\n";
-    std::cout << "\nEscolha uma opcao: ";
+    std::cout << "\nEscolha uma opção: ";
 }
 
 void BasicOperations()
