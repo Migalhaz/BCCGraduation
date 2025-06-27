@@ -25,8 +25,9 @@ void AwaitInput()
     #ifdef _WIN32
         system("pause");
     #else
+        std::cin.clear();
         std::cout << "Pressione enter para continuar...\n";
+        std::cin.get();
         std::cin.ignore();
-        getchar();
     #endif
 }

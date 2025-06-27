@@ -98,15 +98,26 @@ std::vector<long long> DefineEncryptedMessage()
     ClearConsole();
     std::cout << "Digite sua mensagem criptografada: \n";
     long long item;
+    std::string input;
+
     currentEncryptedMessage.clear();
-    while(true)
+    while (true)
     {
-        std::cin >> item;
-        if (item == -1)
+        std::cin >> input;
+        try
         {
+            item = std::stoll(input);
+            if (item < 0)
+            {
+                throw std::invalid_argument("Value cannot be negative.");
+            }
+            currentEncryptedMessage.push_back(item);
+        }
+        catch (...)
+        {
+            std::cout << "Operação encerrada!\n";
             break;
         }
-        currentEncryptedMessage.push_back(item);
     }
     return currentEncryptedMessage;
 }
