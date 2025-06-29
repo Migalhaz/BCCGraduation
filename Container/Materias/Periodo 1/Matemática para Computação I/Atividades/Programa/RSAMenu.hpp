@@ -246,11 +246,11 @@ void ShowGenerationKeyMenu()
         {
             ClearConsole();
             std::cout << "Escolhendo primo aleatório para p!\n";
-            int p = GetRandomPrime(2, 100);
+            int p = GetRandomPrime(200, 10000);
             std::cout << "p foi definido como: " << p << "!\n";
 
             std::cout << "Escolhendo primo aleatório para q!\n";
-            int q = GetRandomPrime(2, 100);
+            int q = GetRandomPrime(200, 10000);
             std::cout << "q foi definido como: " << q << "!\n";
 
             currentKey = MyCrypto::RSAKey(p, q);

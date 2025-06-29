@@ -5,8 +5,12 @@
 void ExplainDiv()
 {
     ClearConsole();
-    std::cout << "Isso é um exemplo de divisão: ";
-    std::cout << "10/2 = " << MyMath::Divide(10, 2) << '\n';
+    if (showExamples)
+    {
+        std::cout << "Isso é um exemplo de divisão: ";
+        std::cout << "10/2 = " << MyMath::Divide(10, 2) << '\n';
+        std::cout << "pois 10 = 2 * 5 + 0\nSendo, 10 o dividendo, 2 divisor, 5 o Quociente e 0 o resto!";
+    }
 }
 
 void ShowDivExample()
