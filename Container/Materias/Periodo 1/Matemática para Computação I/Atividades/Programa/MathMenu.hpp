@@ -28,7 +28,7 @@ void ShowMathOptions()
 void ShowBasicOptions()
 {
     ClearConsole();
-    std::cout << "=== FUNCOES BÁSICAS ===\n";
+    std::cout << "=== FUNÇÕES BÁSICAS ===\n";
     std::cout << "[1] Divisão\n";
     std::cout << "[2] Função Piso\n";
     std::cout << "[3] Função Teto\n";
@@ -97,4 +97,3 @@ void ShowMathMenu()
     }
     ClearConsole();
 }
-

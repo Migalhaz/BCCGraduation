@@ -22,7 +22,18 @@ void ExplainFloor()
 
 void ExplainCeil()
 {
-
+if (explain)
+    {
+        std::cout << "A função piso pega um número real e arrendonda para o menor inteiro que é maior ou igual a ele.\n";
+    }
+    if (showExamples)
+    {
+        std::cout << "Exemplos:\n";
+        std::cout << "O resultado da função teto do número 3.1 é 4.\n";
+        std::cout << "Pois o menor número inteiro >= 3.1 é 4.\n";
+        std::cout << "\nO resultado da função teto do número -1.99 é -1.\n";
+        std::cout << "Pois o menor número inteiro >= -1.99 é -1.\n";
+    }
 }
 
 void ShowFloorExample()
