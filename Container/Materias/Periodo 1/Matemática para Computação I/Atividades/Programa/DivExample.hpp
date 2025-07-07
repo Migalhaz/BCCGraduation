@@ -17,14 +17,14 @@ void ShowDivExample()
 {
     ExplainDiv();
 
-    double dividendo = 0;
-    double divisor = 0;
+    long long dividendo = 0;
+    long long divisor = 0;
     
     GetInput(dividendo, "Insira o dividendo: ");
     GetInput(divisor, "Insira o divisor: ");
     
-    double resultado;
-    double resto;
+    long long resultado;
+    long long resto;
 
     if (divisor == 0)
     {

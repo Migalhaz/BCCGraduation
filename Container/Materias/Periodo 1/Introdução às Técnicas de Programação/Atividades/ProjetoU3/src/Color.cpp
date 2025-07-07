@@ -1,10 +1,9 @@
 #include "Color.hpp"
 
 colors::Color::Color(unsigned short r = 0, unsigned short g = 0, unsigned short b = 0)
+:_r(r), _g(g), _b(b)
 {
-    this->_r = r;
-    this->_g = g;
-    this->_b = b;
+    
 }
 
 unsigned short colors::Color::getR() const 

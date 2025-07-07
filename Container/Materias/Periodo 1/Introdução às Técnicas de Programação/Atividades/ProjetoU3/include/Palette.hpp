@@ -1,4 +1,5 @@
 #pragma once
+#include <iostream>
 #include <vector>
 #include "ColorMap.hpp"
 
@@ -11,9 +12,10 @@ namespace colors
 
         public:
             Palette();
+            ~Palette();
 
-            std::size_t getColorCount();
-            ColorMap* getColor(int index);
+            const std::size_t getColorCount() const;
+            ColorMap* getColor(std::size_t index) const;
 
             void pushBackColorMap(ColorMap& colorMap);
             ColorMap* popBackColorMap();

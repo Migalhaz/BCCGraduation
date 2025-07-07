@@ -1,11 +1,12 @@
 #include "ColorMap.hpp"
 
-colors::ColorMap::ColorMap(unsigned short r, unsigned g, unsigned short b, double height) : colors::Color(r, g, b)
+colors::ColorMap::ColorMap(unsigned short r, unsigned g, unsigned short b, double height) 
+: colors::Color(r, g, b), _height(height)
 {
-    this->_height = height;
+    
 }
 
-double colors::ColorMap::GetHeight() const
+double colors::ColorMap::getHeight() const
 {
     return _height;
 }

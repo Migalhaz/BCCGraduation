@@ -4,7 +4,6 @@
 
 int main()
 {    
-    SetupPaleteFromFile("./colors.cor");
-    Palette p;
+    
     return 0;
 }

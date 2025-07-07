@@ -10,6 +10,7 @@ namespace colors
 
         public:
             ColorMap(unsigned short r, unsigned g, unsigned short b, double height);
-            double GetHeight() const;
+            
+            double getHeight() const;
     };
 }

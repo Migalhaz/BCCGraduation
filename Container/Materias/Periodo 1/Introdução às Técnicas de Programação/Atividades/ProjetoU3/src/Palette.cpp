@@ -5,12 +5,20 @@ colors::Palette::Palette()
     this->_colors = std::vector<colors::ColorMap*>();
 }
 
-std::size_t colors::Palette::getColorCount()
+colors::Palette::~Palette()
+{
+    for(colors::ColorMap* color : _colors)
+    {
+        delete color;
+    }
+}
+
+const std::size_t colors::Palette::getColorCount() const
 {
     return this->_colors.size();
 }
 
-colors::ColorMap* colors::Palette::getColor(int index)
+colors::ColorMap* colors::Palette::getColor(std::size_t index) const
 {
     if (index < 0 || index >= getColorCount())
     {
