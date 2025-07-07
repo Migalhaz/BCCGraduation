@@ -1,22 +1,28 @@
 #include "Color.hpp"
 
-colors::Color::Color(unsigned short r = 0, unsigned short g = 0, unsigned short b = 0)
+colors::Color::Color()
+:_r(0), _g(0), _b(0)
+{
+    
+}
+
+colors::Color::Color(int r, int g, int b)
 :_r(r), _g(g), _b(b)
 {
     
 }
 
-unsigned short colors::Color::getR() const 
+int colors::Color::getR() const 
 { 
     return _r; 
 }
 
-unsigned short colors::Color::getG() const 
+int colors::Color::getG() const 
 { 
     return _g; 
 }
 
-unsigned short colors::Color::getB() const 
+int colors::Color::getB() const 
 { 
     return _b; 
 }

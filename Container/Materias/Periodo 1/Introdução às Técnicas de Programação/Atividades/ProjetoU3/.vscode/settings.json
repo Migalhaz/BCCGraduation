@@ -43,6 +43,13 @@
         "numbers": "cpp",
         "ostream": "cpp",
         "streambuf": "cpp",
-        "typeinfo": "cpp"
+        "typeinfo": "cpp",
+        "format": "cpp",
+        "optional": "cpp",
+        "variant": "cpp",
+        "charconv": "cpp",
+        "ctime": "cpp",
+        "span": "cpp",
+        "text_encoding": "cpp"
     }
 }

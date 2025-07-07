@@ -3,13 +3,13 @@
 
 namespace colors
 {
-    class ColorMap : Color
+    class ColorMap : public Color
     {
         private:
             double _height = 0;
 
         public:
-            ColorMap(unsigned short r, unsigned g, unsigned short b, double height);
+            ColorMap(int r, int g, int b, double height);
             
             double getHeight() const;
     };
