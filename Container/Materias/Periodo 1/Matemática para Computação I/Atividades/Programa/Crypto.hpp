@@ -120,7 +120,8 @@ namespace MyCrypto
 
         for(char c : message)
         {
-            long long newC = ModExp(c, key.e, key.n);
+            int letterIndex = c-64;
+            long long newC = ModExp(letterIndex, key.e, key.n);
             result.push_back(newC);
         }
 
