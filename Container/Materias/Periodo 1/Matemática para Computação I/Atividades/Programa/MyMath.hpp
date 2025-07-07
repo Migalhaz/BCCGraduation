@@ -241,7 +241,7 @@ namespace MyMath
 
         for (int i = n-1; i > 1; --i)
         {
-            if(CanDivide(n, i))
+            if((n%i) == 0)
             {
                 notPrimes.insert(n);
                 return false;
