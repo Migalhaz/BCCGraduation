@@ -242,7 +242,7 @@ void ShowGenerationKeyMenu()
             if (e != -1)
             {
                 currentKey.e = e;
-                currentKey.GeneratePrivateExpo();
+                currentKey.d = currentKey.GeneratePrivateExpo();
             }
             if (d != -1)
             {

@@ -41,6 +41,57 @@ namespace MyMath
         return DivideInteger(n, d, q, r);
     }
 
+    bool DivideInteger(long long n, long long d, long long& q, long long& r)
+    {
+        q = 0;
+        r = 0;
+        if(d == 0)
+        {
+            throw std::invalid_argument("Nao é possível dividir por zero!");
+            return false;
+        }
+
+        if (n == d)
+        {
+            q = 1;
+            r = 0;
+            return true;
+        }
+
+        if((n > 0 && d > 0))
+        {
+            while (((q + 1) * d) <= n)
+            {
+                ++q;
+            }
+        }
+        else if (n < 0 && d < 0)
+        { 
+            while ((n - (q * d)) < 0)
+            {
+                ++q;
+            }
+        }
+        else if (n > 0 && d < 0)
+        {
+            while(((q - 1) * d) <= n)
+            {
+                --q;
+            }
+        }
+        else if (n < 0 && d > 0)
+        {
+            while ((n - (q * d)) < 0)
+            {
+                --q;
+            }
+        }
+        
+        r = n - (q * d);
+
+        return r == 0; 
+    }
+
     bool DivideInteger(int n, int d, int& q, int& r)
     {
         q = 0;
