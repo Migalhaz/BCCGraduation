@@ -2,15 +2,21 @@
 
 colors::Palette::Palette()
 {
-    this->_colors = std::vector<colors::ColorMap*>();
+    this->_colors = std::vector<colors::ColorMap>();
+}
+
+colors::Palette::Palette(int& size, colors::ColorMap colors[])
+{
+    this->_colors = std::vector<colors::ColorMap>();
+    for (int i = 0; i < size; ++i)
+    {
+        pushBackColorMap(colors[i]);  
+    }
 }
 
 colors::Palette::~Palette()
 {
-    for(colors::ColorMap* color : _colors)
-    {
-        delete color;
-    }
+    
 }
 
 const std::size_t colors::Palette::getColorCount() const
@@ -18,7 +24,7 @@ const std::size_t colors::Palette::getColorCount() const
     return this->_colors.size();
 }
 
-colors::ColorMap* colors::Palette::getColor(std::size_t index) const
+colors::ColorMap colors::Palette::getColor(std::size_t index) const
 {
     if (index < 0 || index >= getColorCount())
     {
@@ -29,12 +35,12 @@ colors::ColorMap* colors::Palette::getColor(std::size_t index) const
 
 void colors::Palette::pushBackColorMap(colors::ColorMap& colorMap)
 {
-    this->_colors.push_back(&colorMap);
+    this->_colors.push_back(colorMap);
 }
 
-colors::ColorMap* colors::Palette::popBackColorMap()
+colors::ColorMap colors::Palette::popBackColorMap()
 {
-    colors::ColorMap* result = getColor(getColorCount()-1);
+    colors::ColorMap result = getColor(getColorCount()-1);
     this->_colors.pop_back();
     return result;
 }

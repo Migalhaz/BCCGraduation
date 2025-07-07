@@ -1,6 +1,6 @@
 #include "ColorMap.hpp"
 
-colors::ColorMap::ColorMap(unsigned short r, unsigned g, unsigned short b, double height) 
+colors::ColorMap::ColorMap(int r, int g, int b, double height) 
 : colors::Color(r, g, b), _height(height)
 {
     
