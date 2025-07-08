@@ -4,7 +4,7 @@ colors::Image::Image(unsigned int x, unsigned int y)
 : _x(x), _y(y)
 {
     _colorMatrix = new Color*[x];
-    for (int i = 0; i < y; ++i)
+    for (int i = 0; i < x; ++i)
     {
         _colorMatrix[i] = new Color[y];
     }
