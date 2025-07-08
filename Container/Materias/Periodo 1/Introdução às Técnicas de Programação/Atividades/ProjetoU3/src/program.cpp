@@ -6,10 +6,10 @@ int main()
     std::cout << "Insira o caminho do arquivo a ser inscrito: ";
     std::cin >> filePath;
 
-    int maxX = 3;
-    int maxY = 2;
+    int maxX = 14;
+    int maxY = 9;
 
-    colors::Image image(3, 2);
+    colors::Image image(maxX, maxY);
 
     colors::Color blue(0, 0, 255);
     colors::Color white(255, 255, 255);
@@ -21,26 +21,22 @@ int main()
         for(int y = 0; y < maxY; ++y)
         {
             colors::Color *currentColor = nullptr;
-            switch (x)
+            
+            if (y < 3)
             {
-            case 0:
-                currentColor = &blue;
-                break;
-            case 1:
-                currentColor = &white;
-                break;
-            case 2:
                 currentColor = &red;
-                break;
-            default:
-                break;
             }
-
-            colors::Color a = *currentColor;
+            else if (y < 6)
+            {
+                currentColor = &white;
+            }
+            else
+            {
+                currentColor = &blue;
+            }
             std::cout << "Cor para: " << x << ":" << y << " = ";
-            std::cout << a.getR() << ' ' << a.getG() << ' ' << a.getB() <<'\n';
-
-            image.setColor(a, x, y);
+            std::cout << (*currentColor).getR() << ' ' << (*currentColor).getG() << ' ' << (*currentColor).getB() <<'\n';
+            image.setColor(*currentColor, x, y);
         }
     }
 

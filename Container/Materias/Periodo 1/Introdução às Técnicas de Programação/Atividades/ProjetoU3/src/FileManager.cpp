@@ -62,9 +62,9 @@ void FileManager::ExportImage(colors::Image image, const std::string& filePath)
     newFile << imageSize;
     newFile << maxColorIntensity;
 
-    for (int x = 0; x < xSize; ++x)
+    for (int y = 0; y < ySize; ++y)
     {
-        for (int y = 0; y < ySize; ++y)
+        for (int x = 0; x < xSize; ++x)
         {
             colors::Color currentColor = image.getColor(x, y);
             int r = currentColor.getR();
