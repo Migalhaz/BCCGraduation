@@ -1,4 +1,5 @@
 #include "FileManager.hpp"
+#include "Menus.hpp"
 
 colors::Palette FileManager::GeneratePalleteFromFile(const std::string& filePath)
 {
@@ -45,7 +46,7 @@ colors::Palette FileManager::GeneratePalleteFromFile(const std::string& filePath
     return newPalette;
 }
 
-void FileManager::ExportImage(colors::Image image, const std::string& filePath)
+void FileManager::ExportImage(const colors::Image& image, const std::string& filePath)
 {
     std::cout << "Esrevendo arquivo!\n";
     std::ofstream newFile(filePath);
@@ -76,4 +77,71 @@ void FileManager::ExportImage(colors::Image image, const std::string& filePath)
     }
 
     newFile.close();
+}
+
+colors::Image FileManager::GenerateGrayScaleTerrainImage(const terrain::Terrain& terrain)
+{
+    int terrainSize = (int)terrain.getSize();
+    colors::Image* newImage = new colors::Image(terrainSize, terrainSize);
+
+    for (int y = 0; y < terrainSize; ++y)
+    {
+        for (int x = 0; x < terrainSize; ++x)
+        {
+            double height = terrain.getHeight(y, x);
+            int colorIntensity = height * 255;
+            if (!menu::_CurrentSettings.getShadowSetting())
+            {
+                colors::Color color(colorIntensity, colorIntensity, colorIntensity);
+                (*newImage).setColor(color, x, y);
+                continue;
+            }
+            if (x > 0  && y > 0)
+            {
+                double lastHeight = terrain.getHeight(y-1, x-1);
+                if(height < lastHeight)
+                {
+                    colorIntensity *= 0.9;
+                }
+            }
+            colors::Color color(colorIntensity, colorIntensity, colorIntensity);
+            (*newImage).setColor(color, x, y);
+        }
+    }
+
+    return *newImage;
+}
+
+colors::Image FileManager::GeneratePaintedTerrainImage(const terrain::Terrain& terrain, const colors::Palette& palette)
+{
+    int terrainSize = (int)terrain.getSize();
+    colors::Image* newImage = new colors::Image(terrainSize, terrainSize);
+
+    for (int y = 0; y < terrainSize; ++y)
+    {
+        for (int x = 0; x < terrainSize; ++x)
+        {
+            double height = terrain.getHeight(y, x);
+
+            colors::ColorMap currentColor = palette.getColorByHeight(height);
+
+            double colorIntensity = 1;
+            if (x > 0  && y > 0 && menu::_CurrentSettings.getShadowSetting())
+            {
+                double lastHeight = terrain.getHeight(y-1, x-1);
+                if(height < lastHeight)
+                {
+                    colorIntensity *= menu::_CurrentSettings.getShadowIntensity();
+                }
+            }
+            
+            int newR = currentColor.getR() * colorIntensity;
+            int newG = currentColor.getG() * colorIntensity;
+            int newB = currentColor.getB() * colorIntensity;
+            currentColor.setRGB(newR, newG, newB);
+
+            (*newImage).setColor(currentColor, x, y);
+        }
+    }
+    return *newImage;   
 }

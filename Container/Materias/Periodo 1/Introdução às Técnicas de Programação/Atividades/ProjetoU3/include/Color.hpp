@@ -18,6 +18,8 @@ namespace colors
             int getG() const;
             int getB() const;
             
+            void setRGB(int r = 0,int g = 0, int b = 0);
+
             friend std::ostream& operator<<(std::ostream& out, const Color& color);
     };
 }

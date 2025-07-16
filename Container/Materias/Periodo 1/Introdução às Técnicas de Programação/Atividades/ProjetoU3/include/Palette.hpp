@@ -13,10 +13,11 @@ namespace colors
         public:
             Palette();
             Palette(int& size, ColorMap colors[]);
-            ~Palette();
+            ~Palette() = default;
 
             const std::size_t getColorCount() const;
-            ColorMap getColor(std::size_t index) const;
+            const ColorMap getColor(std::size_t index) const;
+            const ColorMap getColorByHeight(double height) const;
 
             void pushBackColorMap(ColorMap& colorMap);
             ColorMap popBackColorMap();

@@ -12,6 +12,13 @@ colors::Color::Color(int r, int g, int b)
     
 }
 
+void colors::Color::setRGB(int r, int g, int b) 
+{
+    this->_r = r;
+    this->_g = g;
+    this->_b = b;
+}
+
 int colors::Color::getR() const 
 { 
     return _r; 

@@ -14,23 +14,31 @@ colors::Palette::Palette(int& size, colors::ColorMap colors[])
     }
 }
 
-colors::Palette::~Palette()
-{
-    
-}
-
 const std::size_t colors::Palette::getColorCount() const
 {
     return this->_colors.size();
 }
 
-colors::ColorMap colors::Palette::getColor(std::size_t index) const
+const colors::ColorMap colors::Palette::getColor(std::size_t index) const
 {
     if (index < 0 || index >= getColorCount())
     {
         throw std::out_of_range("O valor " + std::to_string(index) + " excede os limites do vetor!");
     }
     return this->_colors[index];
+}
+
+const colors::ColorMap colors::Palette::getColorByHeight(double height) const
+{
+    for (colors::ColorMap c : this->_colors)
+    {
+        if (height <= c.getHeight())
+        {
+            return c;
+        }
+    }
+
+    return this->_colors.back();
 }
 
 void colors::Palette::pushBackColorMap(colors::ColorMap& colorMap)
