@@ -115,7 +115,7 @@ void menu::settingsMenu()
         {
             std::cout << "[5] Definir intensidade da sombra: " << _CurrentSettings.getShadowIntensity() << '\n';
         }
-        std::cout << "[q] Sair\n";
+        std::cout << "[q] Voltar\n";
         std::cout << "Escolha uma opção: ";
     
         char input;

@@ -1,7 +1,7 @@
 #include "ProgramSettings.hpp"
 
 settings::ProgramSettings::ProgramSettings()
-: _shadowIntensity(0.9), _currentPalette(), _shadowImage(false)
+: _shadowIntensity(0.1), _currentPalette(), _shadowImage(false)
 {
 
 }

@@ -101,7 +101,7 @@ colors::Image FileManager::GenerateGrayScaleTerrainImage(const terrain::Terrain&
                 double lastHeight = terrain.getHeight(y-1, x-1);
                 if(height < lastHeight)
                 {
-                    colorIntensity *= 0.9;
+                    colorIntensity *= std::abs(1 - menu::_CurrentSettings.getShadowIntensity());
                 }
             }
             colors::Color color(colorIntensity, colorIntensity, colorIntensity);
@@ -131,7 +131,7 @@ colors::Image FileManager::GeneratePaintedTerrainImage(const terrain::Terrain& t
                 double lastHeight = terrain.getHeight(y-1, x-1);
                 if(height < lastHeight)
                 {
-                    colorIntensity *= menu::_CurrentSettings.getShadowIntensity();
+                    colorIntensity *= std::abs(1 - menu::_CurrentSettings.getShadowIntensity());
                 }
             }
             
