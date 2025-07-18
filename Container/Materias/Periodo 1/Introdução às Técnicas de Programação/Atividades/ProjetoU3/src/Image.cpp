@@ -35,12 +35,6 @@ colors::Color** colors::Image::getColorMatrix() const
     return _colorMatrix;
 }
 
-colors::Color& colors::Image::getColor(const int& address) const
-{
-    throw std::logic_error("Funcao nao implementada!");
-
-}
-
 colors::Color& colors::Image::getColor(const int& x, const int& y) const
 {
     if (x < 0 || x >= _x)

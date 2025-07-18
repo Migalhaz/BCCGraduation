@@ -46,12 +46,7 @@ namespace colors
              * @return Um ponteiro para ponteiro (Color**) para a matriz de cores.
             */
             colors::Color** getColorMatrix() const;
-            /**
-             * @brief Retorna a cor em um endereço linear (não implementado).
-             * @param address O endereço linear do pixel.
-             * @return Uma referência para o objeto Color.
-            */
-            colors::Color& getColor(const int& address) const;
+
             /**
              * @brief Retorna a cor em uma coordenada específica (x, y).
              * @param x A coordenada da coluna (horizontal).
