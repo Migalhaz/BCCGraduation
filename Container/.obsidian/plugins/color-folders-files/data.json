@@ -53,6 +53,17 @@
       "isItalic": true,
       "isBold": true,
       "textColor": "#e6ca3d"
+    },
+    "Materias/Periodo 2": {
+      "textColor": "#ffffff",
+      "isBold": true,
+      "isItalic": true,
+      "backgroundColor": "#000000"
+    },
+    "Materias/Periodo 2/Horários.md": {
+      "textColor": "#ffffff",
+      "isBold": true,
+      "isItalic": true
     }
   },
   "presets": {
